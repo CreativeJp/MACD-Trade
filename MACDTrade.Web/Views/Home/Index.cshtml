@@ -1,7 +1,51 @@
-﻿
-@{
-    ViewBag.Title = "Index";
+﻿@{
+    ViewBag.Title = "Dashboard";
+    int i = 0;
 }
+@model List<MACDTrade.Data.StockMaster>
 
-<h2>Index</h2>
+<table class="table table-bordered table-hover table-striped" id="tbl-stock">
+    <thead>
+        <tr>
+            <th>No#</th>
+            <th>Stock</th>
+            <th>Google Link</th>
+            <th>MACD Link</th>
+            <th>Status</th>
+            <th>Latest Histogram</th>
+        </tr>
+    </thead>
+    @if(Model != null)
+    {
+    <tbody>
+        @foreach (var item in Model)
+        {
+            i++;
+            <tr>
+                <td>@i</td>
+                <td><span title="@item.CompanyName">@item.StockSymbol</span></td>
+                <td><a href="@item.GglUrl" target="_blank">Click</a></td>
+                <td><a href="@item.MacdUrl" target="_blank">Click</a></td>
+                <td>@item.StockStatusId</td>
+                <td>@item.LastHistogram</td>
+            </tr>
+        }
+    </tbody>
+    }
+</table>
 
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#tbl-stock').DataTable({
+            "bSort": false,
+            "lengthMenu": [[15, 25, -1], ["15 Rows", "25 Rows", "All"]],
+            "language": {
+                "lengthMenu": "Records:  _MENU_",
+                "zeroRecords": "No Records.",
+                "info": "Showing page _PAGE_ of _PAGES_",
+                "infoEmpty": "No records available.",
+                "infoFiltered": "(filtered from _MAX_ records)"
+            }
+        });
+    });
+</script>

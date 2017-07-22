@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MACDTrade.Data.Entity
+namespace MACDTrade.Data
 {
     public class SectorMaster
     {

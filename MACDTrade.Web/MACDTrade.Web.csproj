@@ -91,6 +91,16 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\jquery.datatable\css\jquery.dataTables.css" />
+    <Content Include="Content\jquery.datatable\css\jquery.dataTables.min.css" />
+    <Content Include="Content\jquery.datatable\images\favicon.ico" />
+    <Content Include="Content\jquery.datatable\images\sort_asc.png" />
+    <Content Include="Content\jquery.datatable\images\sort_asc_disabled.png" />
+    <Content Include="Content\jquery.datatable\images\sort_both.png" />
+    <Content Include="Content\jquery.datatable\images\sort_desc.png" />
+    <Content Include="Content\jquery.datatable\images\sort_desc_disabled.png" />
+    <Content Include="Content\jquery.datatable\js\jquery.dataTables.js" />
+    <Content Include="Content\jquery.datatable\js\jquery.dataTables.min.js" />
     <Content Include="Content\login.css" />
     <Content Include="Content\Site.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -100,6 +110,7 @@
     <Content Include="scripts\ai.0.22.9-build00167.min.js" />
     <Content Include="scripts\bootstrap.js" />
     <Content Include="scripts\bootstrap.min.js" />
+    <Content Include="Content\jquery.datatable\images\Sorting icons.psd" />
     <None Include="scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="scripts\jquery-1.10.2.js" />
     <Content Include="scripts\jquery-1.10.2.min.js" />

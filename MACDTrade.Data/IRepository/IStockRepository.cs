@@ -8,6 +8,6 @@ namespace MACDTrade.Data
 {
     interface IStockRepository
     {
-
+        List<StockMaster> ListStocks();
     }
 }

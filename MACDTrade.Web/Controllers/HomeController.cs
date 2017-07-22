@@ -10,9 +10,17 @@ namespace MACDTrade.Web.Controllers
     [Authorize]
     public class HomeController : Controller
     {
+        private StockRepository _stockRepository;
+
+        public HomeController()
+        {
+            _stockRepository = new StockRepository();
+        }
+
         public ActionResult Index()
         {
-            return View();
+            var objModel = _stockRepository.ListStocks();
+            return View(objModel);
         }
     }
 }

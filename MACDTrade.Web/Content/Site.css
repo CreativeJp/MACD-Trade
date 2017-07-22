@@ -5,12 +5,47 @@
 
 /* Set padding to keep content from hitting the edges */
 .body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 15px;
 }
 
 .div-error {
     text-align: center;
     padding: 5px;
     color: #b50808;
+}
+
+a, a:active, a:hover, a:visited {
+    text-decoration: none;
+}
+
+table th {
+    background: #9ed289;
+    font-weight: normal;
+}
+
+table th, table td {
+    padding: 5px;
+}
+
+/* COMMON Jquery datatable */
+.dataTables_length select {
+    height: 27px;
+    padding: 0px 5px;
+    border-radius: 5px;
+}
+.dataTables_filter input[type=search]{
+    height: 27px;
+    padding: 0px 5px;
+    vertical-align: middle;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+    -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+/* MACD DASH BOARD */
+#tbl-stock th, #tbl-stock td {
+    text-align: center;
 }

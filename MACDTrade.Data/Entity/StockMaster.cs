@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MACDTrade.Data.Entity
+namespace MACDTrade.Data
 {
     public class StockMaster
     {
@@ -15,5 +16,9 @@ namespace MACDTrade.Data.Entity
         public string GglUrl { get; set; }
         public string MacdUrl { get; set; }
         public bool? IsActive { get; set; }
+
+        [NotMapped]
+        public int StockStatusId { get; set; }
+        public decimal LastHistogram { get; set; }
     }
 }
