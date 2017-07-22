@@ -13,6 +13,7 @@ F:\MACDTrade\MACDTrade.Web\bin\roslyn\VBCSCompiler.exe.config
 F:\MACDTrade\MACDTrade.Web\bin\MACDTrade.Web.dll.config
 F:\MACDTrade\MACDTrade.Web\bin\MACDTrade.Web.dll
 F:\MACDTrade\MACDTrade.Web\bin\MACDTrade.Web.pdb
+F:\MACDTrade\MACDTrade.Web\bin\MACDTrade.Data.dll
 F:\MACDTrade\MACDTrade.Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 F:\MACDTrade\MACDTrade.Web\bin\Microsoft.Web.Infrastructure.dll
 F:\MACDTrade\MACDTrade.Web\bin\System.Web.Helpers.dll
@@ -21,6 +22,7 @@ F:\MACDTrade\MACDTrade.Web\bin\System.Web.Razor.dll
 F:\MACDTrade\MACDTrade.Web\bin\System.Web.Webpages.Deployment.dll
 F:\MACDTrade\MACDTrade.Web\bin\System.Web.Webpages.dll
 F:\MACDTrade\MACDTrade.Web\bin\System.Web.Webpages.Razor.dll
+F:\MACDTrade\MACDTrade.Web\bin\MACDTrade.Data.pdb
 F:\MACDTrade\MACDTrade.Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 F:\MACDTrade\MACDTrade.Web\bin\System.Web.Razor.xml
 F:\MACDTrade\MACDTrade.Web\bin\System.Web.Webpages.xml

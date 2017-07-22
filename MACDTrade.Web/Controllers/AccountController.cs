@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MACDTrade.Data;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -9,6 +10,13 @@ namespace MACDTrade.Web.Controllers
 {
     public class AccountController : Controller
     {
+        private UserRepository _userReposritoy;
+
+        public AccountController()
+        {
+            _userReposritoy = new UserRepository();
+        }
+
         // GET: Account
         public ActionResult Login()
         {
@@ -18,13 +26,18 @@ namespace MACDTrade.Web.Controllers
         [HttpPost]
         public ActionResult Login(string username, string password)
         {
-            if (username == "jayp")
+            var objUser = _userReposritoy.GetUserByUserName(username);
+            if (objUser != null)
             {
-                FormsAuthentication.SetAuthCookie(username, false);
-                RedirectToAction("Index", "Home");
+                var hash = Helper.CreatePasswordHash(string.Concat(password, objUser.Salt), objUser.Salt);
+                if (objUser.PasswordHash == hash)
+                {
+                    FormsAuthentication.SetAuthCookie(username, false);
+                    return RedirectToAction("Index", "Home");
+                }
             }
             TempData["ErrMsg"] = "username or password incorrect.";
-            return View();
+            return RedirectToAction("login");
         }
 
         public ActionResult Logout()
