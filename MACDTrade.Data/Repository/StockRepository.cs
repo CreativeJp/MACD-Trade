@@ -18,7 +18,7 @@ namespace MACDTrade.Data
                         LEFT JOIN  StockStatus SS ON SM.StockId = SS.StockId
                         LEFT JOIN SectorMaster Sec ON SM.SectorId = Sec.SectorId
                         WHERE SM.IsActive = 1 ";
-            var dr = dbHelper.ExecuteReader(strSQL);
+            var dr = dbHelper.GetDataTable(strSQL);
             return UIHelper.ConvertToObjList<StockMaster>(dr);
         }
     }

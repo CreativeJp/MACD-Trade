@@ -219,7 +219,6 @@ namespace MACDTrade.Data
         {
             if (disposing)
             {
-                connection.Dispose();
                 command.Dispose();
             }
         }
